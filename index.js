@@ -16,8 +16,6 @@ mongoose
     .then(() => console.log("MongoDB Conencted"))
     .catch((err) => console.log(err));
 
-// mongodb+srv://ddock4you:<password>@cluster0.wlayg.mongodb.net/<dbname>?retryWrites=true&w=majority
-
 app.get("/", (req, res) => res.send("하이염"));
 
 app.listen(port, () => console.log(`server on port ${port}`));
